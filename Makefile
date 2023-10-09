@@ -46,4 +46,4 @@ transform_load:
 	python main.py transform_load
 
 query:
-	python main.py general_query "SELECT * FROM AirlineSafetyDB WHERE airline='Alaska Airlines';"
+	python main.py general_query "SELECT * FROM birthDB WHERE year=2000;"
