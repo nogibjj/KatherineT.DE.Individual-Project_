@@ -30,7 +30,7 @@ def handle_arguments(args):
 
     args = parser.parse_args(args[:1])
     print(args.action)
-    
+
     if args.action == "update_record":
         parser.add_argument("year", type=int)
         parser.add_argument("month", type=int)

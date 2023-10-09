@@ -17,6 +17,7 @@ def test_extract():
     assert result.returncode == 0
     assert "Extracting data..." in result.stdout
 
+
 def test_delete_record():
     """tests delete_record"""
     result = subprocess.run(
