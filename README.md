@@ -25,7 +25,7 @@ The purpose of this project is to create a Databricks notebook that performs ext
 
 ## Visualization
 The 20 artisits with most songs released in 2008
-![Screenshot 2023-11-11 at 7 25 20 PM](https://github.com/nogibjj/KatherineT.DE.Individual-Project_3/assets/143833511/8ec6a022-06f9-4f70-83c0-965f2702731f)
+![Screenshot 2023-11-11 at 7 25 20 PM](https://github.com/nogibjj/KatherineT.DE.Individual-Project_/assets/143833511/9a4d58e1-2b52-4a8a-83a9-fd8fcf4b8446)
 
 ## Video Memo
 https://youtu.be/i2Z2bBNAKRg
