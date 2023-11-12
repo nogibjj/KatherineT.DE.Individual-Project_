@@ -1,35 +1,31 @@
-# Data Engineering Mini Project 5
-
+# Data Engineering Individual 3
 ## Purpose
-The purpose of this project is to set up a code space to automate interactions between Python and SQL Database. 
+The purpose of this project is to create a Databricks notebook that performs extract, transform, load (ETL) operations. Delta Lake is used for data storage and Spark SQL is used for data transformation. A visualization of data and an automated trigger are included in this project. The dataset used is a subset of the Million Song Dataset, a collection of features and metadata for contemporary music tracks.
 
-## Preparation
-1. Fork the sqlite-lab.
-2. Choose a dataset, fifa.csv from Github is chosen. 
+## Steps 
+1. Create a Databricks workspace on Azure
+2. Create a cluster on Databricks
+3. Create three notebooks that achieve the functionalities of extract, transform, and load (ETL) workflow.
+   ![Screenshot 2023-11-11 at 4 12 32 PM](https://github.com/nogibjj/KatherineT.DE.Mini-Project_11/assets/143833511/8ee82802-ee99-4c66-9a34-1a4c2b21fc7a)
+   
+1) Load the raw data into a table to make it available for further processing. Downloads and stores the data in the Databricks FileStore.
+![Screenshot 2023-11-11 at 4 07 32 PM](https://github.com/nogibjj/KatherineT.DE.Mini-Project_11/assets/143833511/8e15ad37-8cb3-4afe-baff-f9b7cac1f7f3)
 
-## Steps
-1. In my.lib, create four files that perform four functions. Extract.py extract a dataset from a URL. Transform.py cleans,fliters the dataset. Load.py transforms the data into SQLite database. Query.py retrieves from the data and performs update,create, etc.
-2. Create a main.py script to run each step.
-3. Use test_main.py to test each file and step.
-4. Save the process in the log file.
+2) Transform the data into a Spark dataframe to prepare it for analysis
+![Screenshot 2023-11-11 at 4 09 25 PM](https://github.com/nogibjj/KatherineT.DE.Mini-Project_11/assets/143833511/01d9594e-d27f-4f89-b45f-d4ff1928d8cf)
 
-## Check format and test
-Use make test command to test the code
+3) Adding queries to analyze the songs data. Find the artist that releases the most songs each year
+![Screenshot 2023-11-11 at 4 11 00 PM](https://github.com/nogibjj/KatherineT.DE.Mini-Project_11/assets/143833511/365d5ce6-d047-4fef-8028-17f96c6961bd)
 
-<img width="787" alt="Screen Shot 2023-10-06 at 12 06 33 AM" src="https://github.com/nogibjj/KatherineT.DE.Mini-Project_5/assets/143833511/cb510863-78ee-4c48-aaa6-25b79a22e67a">
+4. Create a visualization
+ 
+5. Create a workflow to automate running the data ingestion, processing, and analysis steps using a Databricks job. Change the filer conditions in the queries as you want and run the worflow to see the results. 
 
+![Screenshot 2023-11-11 at 4 14 03 PM](https://github.com/nogibjj/KatherineT.DE.Mini-Project_11/assets/143833511/b52c03c7-689a-4392-a3dc-982d518132ee)
 
-Use make lint and format command to check the format
+## Visualization
+The 20 artisits with most songs released in 2008
+ ![Screenshot 2023-11-11 at 7 25 20 PM](https://github.com/nogibjj/KatherineT.DE.Individual-Project_3/assets/143833511/8ec6a022-06f9-4f70-83c0-965f2702731f)
 
-<img width="662" alt="Screen Shot 2023-10-06 at 12 06 47 AM" src="https://github.com/nogibjj/KatherineT.DE.Mini-Project_5/assets/143833511/57e19067-eb1c-41e4-972c-0f7b3da5fb6a">
-
-
-
-## Architecture
-
-![4 17-etl-sqlite-RAW](https://github.com/nogibjj/sqlite-lab/assets/58792/b39b21b4-ccb4-4cc4-b262-7db34492c16d)
-
-
-
-
-
+## Video Memo
+https://youtu.be/i2Z2bBNAKRg
